@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Lists</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            animation: blink 2s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="ツイートの読み込みが終わったらこのボタンをクリックしてください。" id="click" onclick="startHighlightScript()"></input>
+    <p class="click">1ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr">1. 本垢でも特にツイートしてたわけでもないのにとりあえず、課題用のアカウントを作っておこうという試み <a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723593916405174723?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">2ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr">2. リスクマネジメントだということにしておこう。<a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723594367645126975?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">3ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr">3. たぶんこれまでに10ツイートもしたことない人間にとっての40ツイートは重すぎる<a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723594696101138891?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">4ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr">4. もちろんTwitter→Xになってからはじめてのツイート。というかポスト<a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723594912707629189?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">5ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr">5. の割には課題見て最初に思ったことは「ツイートじゃなくてポストじゃね？」だというから不思議<a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723595158485336458?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">6ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr">6. ツリーって何？っていうレベルではある。</p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723595361498042457?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">7ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr">7. すでに疲れた。先は長い</p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723595725802737797?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">8ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr">8. <a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            つけ忘れてた。これはカウントし直すべきなのか、？許してほしい、、、</p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723596045756797119?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">9ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>9. 作戦変更　とりあえずハッシュタグ先に置いとこう
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723596197397729695?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">10ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>10. よんぶんのいちたっせい
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723596381364080947?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">11ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>11. そういえば内容めっちゃ適当だけど大丈夫だろうか
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723596611228696599?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">12ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>12. 筑波大学に来て驚いたことの一つ。<br>ツイッター大学だったということ。<br>友達にツイッターほとんどやったことないと言ったら逆に驚かれた。
+        </p>&mdash; ra vi
+        (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723596885729133031?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">13ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>13. 今更だけどちゃんとツリー状になってるのかもよくわかってない。
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723597086913151333?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">14ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>14. そもそもフォロワーいなければTLにも表示されないから大丈夫なのだろうか
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723597279763050569?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">15ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>15. はじめてTLって言葉使った。ちょっと楽しい
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723597513285124454?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">16ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>16. こうしてツイ廃というものの凄さを実感するという
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723597760283492804?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">17ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>17. まったく課題どうするかについて（というか授業内容に対して）触れられていない気もするが、ツイッター（Xは未だに慣れない）についての授業だと思うことにしよう。
+        </p>&mdash; ra vi
+        (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723598127427674215?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">18ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>18. 最近課題ためがちだったけど、この課題はなんかとりあえず手を動かせばなんとかなりそうなのでとりあえず頑張る。
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723598733081034924?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">19ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>19. ツイートの数える方法についてまったく触れてないのでキリよく次から考え始めよう。
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723598934957052080?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">20ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>20. さてどうしようか。とりあえずGPTくんに頼ることだけは確定した。
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723599165052293161?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">21ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>21. あんまりTwitterの APIとかに詳しくない身からするとdeveloper portal（？）みたいなのでなんとかするのは大変なように思える。（今後使う予定もなさそう、）
+        </p>&mdash;
+        ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723599742289301843?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">22ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>22. どういうふうに数えたらいいのか、課題で求められてることがいまいちちゃんとは理解できてない、
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723599966017593575?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">23ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>23. 実際にアクセスする、みたいなことを言ってたからたぶんツイート内容をただまとめたファイルとかじゃだめってことなのかな
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723600356159238418?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">24ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>24. クリック数をなるべく少なくすべてのツイートを実際にX上で確認してもらう方法を考えろって解釈でとりあえずやってみようかな
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723600804773539908?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">25ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>25. 個人的にはページ内検索とか使えないのかなっていうのは最初に思っていたのでとりあえずGPTにアイデアを貰いに行く
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723601143480369281?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">26ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>26. ツイートの先頭に（数字）＋&quot;.&quot;つけてたのもページ検索で他の数字と競合しないかなと思ったからだった
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723601529566060936?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">27ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>27. pythonのseleniumのwebdriverでページ内検索が自動で使えるっぽい
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723601835855085590?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">28ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>　<br>28.
+            問題発生。よく考えれば&quot;.&quot;つけたところで検索競合するじゃないか</p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723602892647756214?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">29ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>29. ㉙って感じにしとけばよかったのか。
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723603172978221563?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">30ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>30. とりあえず色々試してみてたけどログインしてもらわないと色々制限があって面倒そう
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723609936423506072?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">31ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>31. ページ内検索は開始早々諦め気味。全リンクをリストにして渡してあげて順番に移動してもらうとかでもいいのかな
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723610346097914061?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">32ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>32. ツイートのリプライの一番上のものに順番に移動するようにできるかなと思ったけどログインせずにっていうところがネックなのかなんかあんまり上手く行かなそう
+        </p>&mdash; ra vi
+        (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723610587777872145?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">33ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a><br>33.
+            とりあえずなんとかなりそうなきはする</p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723624940308774937?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">34ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a><br>34.
+            でも初心者すぎてpythonのコードって人に渡してもちゃんと機能するのかとかあんまりよくわかってない</p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723625302583292409?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">35ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a><br>35.
+            seleniumとかいくつかインストールしてもらわないといけない感じになるのかな、どういう感じなんだろう</p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723625750631534676?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">36ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>36. 気づいたらいつの間にかあと少し、頑張れ自分
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723628106291065034?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">37ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>37.
+            pythonはクレカの利用明細をスクレイピングしたいなと思ったことがあってその時に初めて触れて少しだけseleniumとか使って、それ以外だとプログラミング入門で触れたことくらいしかないから実はあんまりわかってない。
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723628834237579476?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">38ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>38. 呼びたい講師を全く書いてないことに気づいた、個人的にはヨビノリさんとかの話聞いてみたいけど、コンテンツ入門でってことならまこなり社長が内容的に少しは被っているような気がする
+        </p>&mdash; ra
+        vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723629676663603341?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">39ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>39. あとはホリエモンさんとかとnewspicksとかで話しているような内容を話しているところを聞きたい。
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723630325178478661?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">40ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a>
+            <br>40. 記念すべき最後のツイート！<br>だいぶ時間はかかったけどなんとかなった。<br>疲れたけど結構楽しかったかも
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723630700564451685?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">41ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a><br>41.
+            一応2回ハッシュタグをつけ忘れていたのでその分のツイートはしておくことにしよう</p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723632127017918607?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">42ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a><br>42.
+            ほんとにほんとの最後のポスト<br>一応ワンクリックで全部自動で実行してくれるようにはなってるはずだけど、課題で求められてるのがこういうのなのかわからないから不安。とりあえず頑張ったから大丈夫だと思いたい。</p>
+        &mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1723632620255502833?ref_src=twsrc%5Etfw">November 12,
+            2023</a>
+    </blockquote>
+    <p class="click">43ツイート目</p><blockquote class="twitter-tweet">
+        <p lang="ja" dir="ltr"><a
+                href="https://twitter.com/hashtag/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E5%85%A5%E9%96%802023?src=hash&amp;ref_src=twsrc%5Etfw">#コンテンツ入門2023</a><br>43.後日談<br>Twitterってスクレイピング禁止なんですね。無知すぎた。結局埋め込みでなんとかすることになりましたとさ。
+        </p>&mdash; ra vi (@ravi5533624252) <a
+            href="https://twitter.com/ravi5533624252/status/1724398270229950703?ref_src=twsrc%5Etfw">November 14,
+            2023</a>
+    </blockquote>
+    <p class="click">ツイートは以上です。</p>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+        function startHighlightScript() {
+            // This function will be called when the Twitter widget script is fully loaded
+                const paragraphs = document.querySelectorAll('p');
+                let currentIndex = 0;
+
+                function highlightParagraph() {
+                    if (currentIndex < paragraphs.length) {
+                        // Remove highlight from the previous paragraph
+                        if (currentIndex > 0) {
+                            paragraphs[currentIndex - 1].classList.remove('highlight');
+                        }
+
+                        // Add highlight to the current paragraph
+                        paragraphs[currentIndex].classList.add('highlight');
+                        currentIndex++;
+
+                        // Scroll to the current paragraph if needed
+                        paragraphs[currentIndex - 1].scrollIntoView({ behavior: 'smooth' });
+
+                        // Schedule the next highlight after 2 seconds
+                        setTimeout(highlightParagraph, 3000);
+                    }
+                }
+
+                // Start the highlighting process
+                highlightParagraph();
+        }
+    </script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const paragraphs = document.querySelectorAll('');
+            let currentIndex = 0;
+    
+            function highlightParagraph() {
+                // Remove highlight from the previous paragraph
+                if (currentIndex > 0) {
+                    paragraphs[currentIndex - 1].classList.remove('highlight');
+                }
+    
+                // Add highlight to the current paragraph
+                if (currentIndex < paragraphs.length) {
+                    paragraphs[currentIndex].classList.add('highlight');
+                    currentIndex++;
+    
+                    // Scroll to the current paragraph if needed
+                    paragraphs[currentIndex - 1].scrollIntoView({ behavior: 'smooth' });
+    
+                    // Schedule the next highlight after 2 seconds
+                    setTimeout(highlightParagraph, 2000);
+                } else {
+                    console.log('Highlighting complete.'); // Add this line to indicate when highlighting is complete
+                }
+            }
+    
+            // Schedule the first highlight after 10 seconds
+            setTimeout(function () {
+                try {
+                    highlightParagraph();
+                } catch (error) {
+                    console.error('An error occurred:', error.message);
+                }
+            }, 10000);
+        });
+    </script> -->
+
+</body>
+
+</html>
+
+
+
+
+
